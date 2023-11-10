@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+    
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    list-style: none;
+    background-color: rgb(246, 234, 234);
+   
+    box-shadow: #ffd6d6;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 8px 12px;
+    margin-left: -30px;
+    padding-top: 15px;
+    margin-top: -20px;
+   
+}
+nav ul li:hover{
+    background-color: #563434;
+}
+a{
+    text-decoration: none;
+     color: #ffff;
+     font-weight: bold;
+     margin: 60px;
+}
+.nav ul li::after{
+    content: '';
+    display: block;
+    background: #f69110;
+    width: 100%;
+    height: 3px;
+    transition: 0.5s;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left:  25px;
+    padding-right: 25px;
+}
+     
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-2 {
+    position: relative;
+    flex-basis: 50%;
+    min-width: 300px;
+    font-weight:bolder;
+   
+   
+}
+.col-2 img{
+    padding: 0;
+    width: 1000px;
+    margin-top: -10%;
+    margin-left: -200px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #fb911f;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 30px 0;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+header {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+header .row {
+    margin-top: 20px;
+    margin-right: 110px;
+}
+
+/* produits populaires */
+.title {
+    text-align: center;
+    color: #555;
+    font-weight: 700;
+    font-size: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+}
+.title span{
+    color: #fb911f;
+    font-size: 1.5em;
+    margin-left: 25px;
+}
+h4{
+    color: #555;
+}
+.col-3 p{
+    font-size: 14px;
+}
+.icons {
+    color: #fb911f;
+}
+.col-3:hover {
+    transform: translateY(-5px);
+}
+.small-container {
+    max-width: 1280px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-3 {
+    flex-basis: 20%;
+    padding: 10px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: center;
+    transition: 0.5s;
+}
+.col-3 img{
+    width: 100px;
+    box-shadow: 20px 20px 30px #999;
+}
+
+
+details{
+    font-weight: bold;
+   
+    }
+    
+   
+  /*  stylisation de Formulaire */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 100px;
+}
+form {
+   
+    position: relative;
+    width: 600px;
+    padding: 40px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    flex-direction: column;
+    border-radius: 20px;
+}
+form h2{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    color: #fb911f;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+     /*  stylisation des inputs*/
+input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    font-size: 15px;
+    color: #fff;
+}
+::placeholder {
+    color: #fff;
+}
+input[type="submit"] {
+    display: inline-block;
+    background: #fb911f;
+    color: #fff;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    color: #555;
+    background: #fff;
+}
+            /*  stylisation de sous titre des section */
+        .paren{
+            margin-top: -150px;
+        }
+        .pro{
+            margin: 330px;
+            font-weight: bolder;
+            margin-top: 30px;
+        }
+            /* stylisation generale des buttons */
+        #rt{
+            color: white; 
+            width: 30px;
+        }
+            /* stylisation de dernier button de retoure */
+        #suivant{
+            margin-left: 400px;
+        }
+ 
+   
+      /* stylisation de footer de la page*/
+    footer{
+        text-align: center;
+        font-weight: bolder;
+    }
+    #fot{
+        
+        background:rgb(135, 129, 129);
+    }
+
+      /* responcive de page*/
+
+                @media screen and (max-width: 900px) {
+                    navbar {
+                    width: -170px;
+                    }
+                    /* responciver de la parti menu*/
+                nav ul li{
+                width: 150px;
+                margin-left: -70px;
+                }
+                nav ul {
+                    justify-content: center;
+                    width: 70px;
+                }
+                a{
+                    
+                    margin: 20px;
+                }
+                #cart{
+                    width: -15px;
+                }
+        .col-2 {
+            position: relative;
+            flex-basis: 50%;
+            min-width: -50px; 
+        }
+          /* responciver de la parti baniere*/
+        .col-2 img{
+            
+            width: 400px;
+            margin-top: -10%;
+            margin-left: -10px;
+        }
+        .col-2 h1{
+            font-size: 50px;
+            line-height: 30px;
+            margin: 12px 0;
+        }
+                        /* responciver de la parti des images*/
+                        img{
+                            width: 25px;
+                        }
+                        .paren{
+                            margin-top: -50px;
+                        }
+                        .pro{
+                            margin: 80px;
+                        }
+                            /* responciver de la parti button*/
+                        #rt{
+                            width:15px;
+                        }
+                            
+                        #suivant{
+                            margin-left: 200px;
+                        }
+                            /* responciver de la parti frm*/
+                        form h2{
+                            width: 100px;
+                            height: 50px;
+
+                            }
+                
+                    }
